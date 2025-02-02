@@ -4,13 +4,15 @@ const router = express.Router();
 let products = [];
 
 
+let lastId = 0;
 
 router.post('/', (req, res) => {
     const { name, price, deadline } = req.body;
     if (!name || !price || !deadline) {
         return res.status(400).json({ message: 'Все поля обязательны' });
     }
-    const product = { id: name.length + price, name, price, deadline };
+
+    const product = { id: ++lastId, name, price, deadline };
     products.push(product);
     res.status(201).json(product);
 });

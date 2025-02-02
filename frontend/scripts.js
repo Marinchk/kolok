@@ -97,12 +97,20 @@ async function sortProducts(type, order) {
 
     products.forEach(product => {
         const li = document.createElement("li");
-        li.innerHTML = `${product.name} - $${product.price} - Buy in ${product.deadline} days 
-                        <button onclick="deleteProduct(${product.id})">Delete</button>
-                        <button onclick="editProduct(${product.id})">✏️</button>`;
+
+        li.innerHTML = `
+            <span id="product-name-${product.id}">${product.name}</span> - 
+            <span id="product-price-${product.id}">$${product.price}</span> - 
+            <span id="product-deadline-${product.id}">${product.deadline} days</span>
+            <button onclick="deleteProduct(${product.id})">Delete</button>
+            <button onclick="editProduct(${product.id})">✏️</button>
+            <button onclick="saveProduct(${product.id})" style="display:none;">✔️</button>
+        `;
+
         productList.appendChild(li);
     });
 }
+
 
 async function calculateTotal() {
     const days = document.getElementById("daysInput").value;

@@ -45,12 +45,42 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
+    /* Уменьшение промежутков между элементами */
+}
+
+li span {
+    flex: 1;
+    /* Равномерное распределение текста внутри */
+    text-align: center;
+    min-width: 50px;
+    /* Минимальная ширина для корректного отображения */
+}
+
+span[contenteditable="true"] {
+    background-color: #f0f0f0;
+    color: #000;
+    border: 1px solid #ddd;
+    padding: 2px 5px;
+    display: inline-block;
+    text-align: center;
 }
 
 li button {
-    background-color: rgb(203, 192, 192);
-    color: rgb(153, 29, 29);
+    background-color: rgb(201, 37, 37);
+    color: rgb(199, 199, 199);
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+    flex-shrink: 0;
+    /* Запрещаем кнопкам растягиваться */
+}
+
+li img {
+    flex-shrink: 0;
+    /* Предотвращает изменение размера иконок */
+    margin-left: 5px;
+    width: 24px;
+    /* Уменьшаем размер иконки */
+    height: 24px;
 }
