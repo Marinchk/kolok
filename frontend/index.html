@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Product List</h1>
+
+    <ul id="productList"></ul>
+
+    <h2>Add New Product</h2>
+    <form id="addProductForm">
+        <input type="text" id="name" placeholder="Product Name" required>
+        <input type="number" id="price" placeholder="Price" required>
+        <input type="number" id="deadline" placeholder="Days to Buy" required>
+        <button type="submit">Add Product</button>
+    </form>
+
+    <h2>Sort Products</h2>
+    <button onclick="sortProducts('price', 'asc')">Sort by Price (Asc)</button>
+    <button onclick="sortProducts('price', 'desc')">Sort by Price (Desc)</button>
+
+
+    <h2>Calculate Total Price</h2>
+    <input type="number" id="daysInput" placeholder="Enter days">
+    <button onclick="calculateTotal()">Calculate</button>
+    <p id="totalPrice">Total: -</p>
+
+    <h2>Send Email</h2>
+    <input type="email" id="emailInput" placeholder="Enter email">
+    <button onclick="sendEmail()">Send</button>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
