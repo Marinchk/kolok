@@ -1,5 +1,5 @@
-const API_URL = "http://90.156.171.151:5000/products";
-const EMAIL_URL = "http://90.156.171.151:5000/send-email";
+const API_URL = "http://localhost:5000/products";
+const EMAIL_URL = "http://localhost:5000/send-email";
 
 document.addEventListener("DOMContentLoaded", loadProducts);
 
