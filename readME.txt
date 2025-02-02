@@ -32,7 +32,6 @@ Zainstaluj zależności (raz ręcznie):
 
 cd backend && npm install
 cd ..
-ъ
 docker-compose up --build
 
 
