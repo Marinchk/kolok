@@ -3,10 +3,6 @@ Marina Olneva 48861 - 1 backend
 Yelysei Uhrimov 45923 - 2 backend
 
 
-
-Backend: http://localhost:5000
-Frontend: http://localhost:8080
-
 Projekt jest aplikacją internetową do zarządzania listą zakupów z możliwością dodawania, usuwania, edytowania produktów, sortowania według ceny, liczenia kwoty zakupów w ciągu X dni i wysyłania listy na e-mail.
 
 Funkcje projektu
@@ -39,6 +35,9 @@ npm install
 cd ..
 docker-compose up --build
 
+
+Backend: http://<IP>:5000
+Frontend: http://<IP>:8080
 
 Backend: http://<IP>:5000
 Frontend: http://<IP>:8080
