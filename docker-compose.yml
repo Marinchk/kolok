@@ -9,12 +9,12 @@ services:
       - ./backend:/app
     environment:
       - NODE_ENV=production
-    command: [ "node", "app.js" ] # Не устанавливаем зависимости
+    command: [ "node", "app.js" ] 
 
   frontend:
     build: ./frontend
     ports:
-      - "8080:8080" # Меняем порт на 8080
+      - "8080:8080"
     volumes:
       - ./frontend:/app
     command: [ "npx", "serve", "-s", ".", "-l", "8080" ]

@@ -46,15 +46,15 @@ li {
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    /* Уменьшение промежутков между элементами */
+
 }
 
 li span {
     flex: 1;
-    /* Равномерное распределение текста внутри */
+
     text-align: center;
     min-width: 50px;
-    /* Минимальная ширина для корректного отображения */
+
 }
 
 span[contenteditable="true"] {
@@ -73,14 +73,14 @@ li button {
     padding: 5px 10px;
     cursor: pointer;
     flex-shrink: 0;
-    /* Запрещаем кнопкам растягиваться */
+
 }
 
 li img {
     flex-shrink: 0;
-    /* Предотвращает изменение размера иконок */
+
     margin-left: 5px;
     width: 24px;
-    /* Уменьшаем размер иконки */
+
     height: 24px;
 }

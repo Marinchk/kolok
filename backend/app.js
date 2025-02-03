@@ -19,5 +19,5 @@ app.use('/products', productsRouter);
 app.post('/send-email', emailService.sendEmail);
 
 app.listen(port, () => {
-    console.log(`Сервер запущен на http://localhost:${port}`);
+    console.log(`server is runnig http://localhost:${port}`);
 });
