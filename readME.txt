@@ -1,36 +1,44 @@
-Oleksii Shpuntov 44979 - frontend
-Marina Olneva 48861 - 1 backend
-Yelysei Uhrimov 45923 - 2 backend
+# Shopping List Management App
 
+## Project Description
+This is a web application for managing a shopping list with features such as adding, deleting, and editing products, sorting by price, calculating total purchases over a specified period, and sending the list via email.
 
-Projekt jest aplikacją internetową do zarządzania listą zakupów z możliwością dodawania, usuwania, edytowania produktów, sortowania według ceny, liczenia kwoty zakupów w ciągu X dni i wysyłania listy na e-mail.
+## Features
+- CRUD Operations: Create, Read, Update, and Delete products.
+- Sort by Price: Ascending/Descending order.
+- Total Purchase Calculation: Compute the total cost over a given period.
+- Email Functionality: Send the shopping list via email.
 
-Funkcje projektu
-CRUD produkt
-Sortuj według Ceny (rosnąco / malejąco).
-Zliczanie kwoty zakupów w ciągu X dni.
-Wysyłanie listy zakupów na e-mail.
+## Technologies Used
+- Backend: Node.js, Express (Port 5000)
+- Frontend: HTML, CSS (Port 8080)
+- Docker: Project consists of two containers (Backend and Frontend)
 
-Backend: http://localhost:5000
-Frontend: http://localhost:8080
+## Quick Installation Guide
 
+- Clone the repository from GitHub:  
+  git clone git@github.com:Marinchk/kolok.git
 
-Kontenery Docker
-Projekt składa się z dwóch kontenerów:
-Backend (Node.js, Express, Port 5000)
-Frontend (html css port 8080) 
+- Change to the project directory:  
+  cd <PROJECT_NAME>
 
+- Build and start the application using Docker Compose:  
+  docker-compose up --build
 
+## Launching the Application
 
-Wszystkie zależności są instalowane ręcznie przed zbudowaniem kontenera(brak node_modules w kontenerze).
- Rozpoczęcie projektu
+- The backend will be available at:  
+  http://localhost:5000
 
- 
-Sklonuj repozytorium:
+- The frontend will be available at:  
+  http://localhost:8080
 
-git clone  git@github.com:Marinchk/kolok.git
-cd < NAZWA_PROJEKTU>
-Zainstaluj zależności
-docker-compose up --build
+## Stopping the Application
 
+- To stop and remove the containers:  
+  docker-compose down
 
+## Developers
+- Oleksii Shpuntov - Frontend Developer (ID: 44979)
+- Marina Olneva - Backend Developer (ID: 48861)
+- Yelysei Uhrimov - Backend Developer (ID: 45923)
