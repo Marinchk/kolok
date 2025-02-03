@@ -11,6 +11,9 @@ Sortuj według Ceny (rosnąco / malejąco).
 Zliczanie kwoty zakupów w ciągu X dni.
 Wysyłanie listy zakupów na e-mail.
 
+Backend: http://localhost:5000
+Frontend: http://localhost:8080
+
 
 Kontenery Docker
 Projekt składa się z dwóch kontenerów:
@@ -27,17 +30,7 @@ Sklonuj repozytorium:
 
 git clone  git@github.com:Marinchk/kolok.git
 cd < NAZWA_PROJEKTU>
-Zainstaluj zależności (raz ręcznie):
-
-
-cd backend 
-npm install
-cd ..
+Zainstaluj zależności
 docker-compose up --build
 
 
-Backend: http://<IP>:5000
-Frontend: http://<IP>:8080
-
-Backend: http://<IP>:5000
-Frontend: http://<IP>:8080
